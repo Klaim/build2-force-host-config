@@ -1,0 +1,18 @@
+: 1
+name: aaa
+version: 0.1.0-a.0.z
+project: force-host-config
+summary: aaa C++ executable
+license: other: proprietary ; Not free/open source.
+description-file: README.md
+url: https://example.org/force-host-config
+email: mjklaim@gmail.com
+#build-error-email: mjklaim@gmail.com
+builds: host : &default
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0
+#depends: libhello ^1.0.0
+
+
+depends: libboost-container >= 1.76.0
+depends: * fmt ^8.0.0
